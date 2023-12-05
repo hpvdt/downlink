@@ -45,11 +45,15 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|147498500|61977500|d14a5bbe-1ce7-44c8-9c40-6f2b6a34b3e5|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|137300000|100000000|8a7173fa-a5b9-4168-a27e-ca55f1177d0d|71ced3b2-d765-48a9-b6a3-44a83cd5e0ce",
+        "silk_edge_clearance|146700000|100000000|8a7173fa-a5b9-4168-a27e-ca55f1177d0d|cf93c191-5d6b-4235-81b6-21bee2d99482"
+      ],
       "meta": {
         "version": 2
       },
