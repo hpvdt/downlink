@@ -4777,7 +4777,7 @@
     (property "Reference" "R18" (at 130.81 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "50k" (at 130.81 69.85 0)
+    (property "Value" "54k9" (at 130.81 69.85 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 128.016 68.326 90)
