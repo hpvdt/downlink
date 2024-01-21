@@ -6,8 +6,8 @@
 
   (title_block
     (title "Downlink Board")
-    (date "2023-11-30")
-    (rev "1.0")
+    (date "2024-01-21")
+    (rev "1.1")
     (company "HPVDT")
     (comment 1 "Hosts a microcontroller and wireless module for computers to use")
     (comment 2 "Designed to be an RPi hat with connections for the RPi touchscreen")
@@ -3057,6 +3057,13 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 49d99b5e-3984-4e93-b550-22927e48de14)
+  )
+  (text_box "SOMETHING IS UP WITH THE USB CONNECTION. THE SECOND A CHIP IS SEATED ON THE BOARD USB COMS FAIL, CONNECTING A CHIP FROM OFF-BOARD TO THE USB RESISTORS WORKS THOUGH."
+    (at 81.28 116.84 0) (size 34.29 15.24)
+    (stroke (width 0) (type dash_dot_dot))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 4cb1d4e8-532e-4d0a-9314-6a13a97367ae)
   )
   (text_box "Star of the show, communicates with the team's vehicle.\n\nThe nRF24L01+LA+LNA modules have line of sight ranges exceeding several hundred metres! Data rate is generally 250 kbps but can be bumped up at shorter distances."
     (at 134.62 137.16 0) (size 60.96 11.43)
