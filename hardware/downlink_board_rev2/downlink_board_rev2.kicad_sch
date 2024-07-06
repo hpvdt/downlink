@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Downlink Board")
-		(date "2024-01-21")
-		(rev "1.1")
+		(date "2024-07-06")
+		(rev "2")
 		(company "HPVDT")
 		(comment 1 "Hosts a microcontroller and wireless module for computers to use")
 		(comment 2 "Designed to be an RPi hat with connections for the RPi touchscreen")
