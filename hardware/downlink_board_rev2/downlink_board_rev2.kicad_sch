@@ -349,7 +349,7 @@
 				)
 			)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -357,21 +357,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -10.16 19.05 0)
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0"
-				(at 19.05 19.05 0)
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -392,7 +390,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -419,7 +417,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -531,7 +529,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -732,7 +730,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -3628,9 +3626,10 @@
 			)
 		)
 		(symbol "Jumper:Jumper_2_Open"
+			(pin_numbers hide)
 			(pin_names
 				(offset 0) hide)
-			(exclude_from_sim no)
+			(exclude_from_sim yes)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "JP"
@@ -5602,9 +5601,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5702,8 +5701,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5722,9 +5721,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5822,8 +5821,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5842,9 +5841,9 @@
 		)
 		(symbol "power:+BATT"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5942,8 +5941,8 @@
 			(symbol "+BATT_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+BATT"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5962,9 +5961,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6038,8 +6037,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6121,7 +6120,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6206,6 +6205,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35f22df7-df5d-48c9-b402-8cfa5b25ba54")
+	)
+	(junction
+		(at 250.19 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d69a894-625c-4443-9ceb-8d489e7ea8af")
 	)
 	(junction
 		(at 224.79 21.59)
@@ -6488,24 +6493,24 @@
 		(uuid "0325424e-edc8-45e3-8c0f-c19077f91493")
 	)
 	(no_connect
-		(at 176.53 97.79)
-		(uuid "1303841e-76a5-4bc1-bfc4-4c8468c10899")
+		(at 176.53 72.39)
+		(uuid "07cb1019-920d-4337-9488-521062514dcb")
 	)
 	(no_connect
-		(at 176.53 92.71)
-		(uuid "1421c4b1-b34d-4f48-a092-78be28b42721")
+		(at 236.22 62.23)
+		(uuid "080cdfec-4a26-4f7c-8d41-a2d5b671d6b9")
+	)
+	(no_connect
+		(at 176.53 97.79)
+		(uuid "1303841e-76a5-4bc1-bfc4-4c8468c10899")
 	)
 	(no_connect
 		(at 176.53 74.93)
 		(uuid "2182e5c6-9b89-4a1f-8b3f-b1d3a78cc075")
 	)
 	(no_connect
-		(at 264.16 53.34)
-		(uuid "23c7c3d7-fd08-4909-89ad-d49b985351ec")
-	)
-	(no_connect
-		(at 264.16 66.04)
-		(uuid "281d8481-792b-4592-8fda-655f7beafd65")
+		(at 236.22 67.31)
+		(uuid "23fc5249-765d-4ed2-b4aa-1d034025bbd7")
 	)
 	(no_connect
 		(at 96.52 57.15)
@@ -6556,10 +6561,6 @@
 		(uuid "462a8566-b4c3-478f-8987-0d3c6a058e94")
 	)
 	(no_connect
-		(at 264.16 63.5)
-		(uuid "46b22911-6053-41c5-9a48-88f5d6c4349d")
-	)
-	(no_connect
 		(at 83.82 54.61)
 		(uuid "46e930b1-ff85-4a33-9479-d45a463e25dc")
 	)
@@ -6588,10 +6589,6 @@
 		(uuid "6a10ba49-3e60-4ecb-aaa4-f0a889fcc300")
 	)
 	(no_connect
-		(at 264.16 76.2)
-		(uuid "6badf264-7d7a-4e50-9ee8-8f18d157fbb6")
-	)
-	(no_connect
 		(at 96.52 69.85)
 		(uuid "708f7b5e-afe8-48f9-acf8-4b21fecf6e7d")
 	)
@@ -6600,20 +6597,12 @@
 		(uuid "718ec08e-2714-4aab-bc18-58361f4332c1")
 	)
 	(no_connect
-		(at 248.92 83.82)
-		(uuid "7e50bcb8-c7a8-4fe6-91ea-d6985c1599c3")
-	)
-	(no_connect
 		(at 83.82 69.85)
 		(uuid "82b71a55-25af-4c84-9d17-fd18667ffb87")
 	)
 	(no_connect
 		(at 209.55 41.91)
 		(uuid "84358109-e0f6-4690-b871-adc4effb557b")
-	)
-	(no_connect
-		(at 176.53 95.25)
-		(uuid "87a9fd78-8571-4269-9722-2f28195235f1")
 	)
 	(no_connect
 		(at 83.82 39.37)
@@ -6628,10 +6617,6 @@
 		(uuid "9add6841-07e8-405a-a0ec-7ede69475351")
 	)
 	(no_connect
-		(at 251.46 48.26)
-		(uuid "9d08f7f7-9c33-4d09-ac9c-f975d84cdca1")
-	)
-	(no_connect
 		(at 83.82 52.07)
 		(uuid "a0e6d9ba-2393-409b-9a96-eae5b5d78fb7")
 	)
@@ -6640,20 +6625,16 @@
 		(uuid "a47c58fd-b413-43f3-9ded-f56e2f110835")
 	)
 	(no_connect
-		(at 264.16 71.12)
-		(uuid "ad04c157-1903-45ad-a9bd-ab6e36c220e1")
-	)
-	(no_connect
-		(at 264.16 78.74)
-		(uuid "affdebd6-c5e7-4b0e-b08f-520afd9dec3e")
-	)
-	(no_connect
 		(at 83.82 34.29)
 		(uuid "b3ebaeb9-daee-429e-8607-672914deb989")
 	)
 	(no_connect
 		(at 176.53 59.69)
 		(uuid "b7477e8b-c3e3-4aee-b679-dc4a4abe93e1")
+	)
+	(no_connect
+		(at 236.22 59.69)
+		(uuid "bdad68fd-d3c9-4bcc-9d02-45363f60330a")
 	)
 	(no_connect
 		(at 209.55 39.37)
@@ -6717,6 +6698,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 92.71) (xy 176.53 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03050d66-6fad-4187-841c-a30dbdb54104")
+	)
+	(wire
+		(pts
 			(xy 160.02 52.07) (xy 161.29 52.07)
 		)
 		(stroke
@@ -6724,16 +6715,6 @@
 			(type default)
 		)
 		(uuid "03df8188-a715-4e4e-ace9-50c6e27b41af")
-	)
-	(wire
-		(pts
-			(xy 209.55 72.39) (xy 234.95 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06783922-f9bd-4cfb-9f59-f9645ebee547")
 	)
 	(wire
 		(pts
@@ -7087,6 +7068,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 72.39) (xy 224.79 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4235a966-6812-4ccd-99dc-a8f535fc2106")
+	)
+	(wire
+		(pts
 			(xy 43.18 123.19) (xy 60.96 123.19)
 		)
 		(stroke
@@ -7134,6 +7125,16 @@
 			(type default)
 		)
 		(uuid "49e70d53-0bf4-46df-bd43-ff19a4726109")
+	)
+	(wire
+		(pts
+			(xy 222.25 54.61) (xy 222.25 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a424855-6ffd-42a9-9377-187591d62951")
 	)
 	(wire
 		(pts
@@ -7197,13 +7198,13 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 49.53) (xy 265.43 60.96)
+			(xy 224.79 57.15) (xy 236.22 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e4607b9-f6a0-421c-bd5d-370c6b3d5dd1")
+		(uuid "5d66d8b9-2992-4df4-80f7-06918e6707fb")
 	)
 	(wire
 		(pts
@@ -7277,6 +7278,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 80.01) (xy 250.19 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64418c14-ce80-4e9b-af04-0080e6b4942c")
+	)
+	(wire
+		(pts
 			(xy 43.18 109.22) (xy 43.18 104.14)
 		)
 		(stroke
@@ -7294,16 +7305,6 @@
 			(type default)
 		)
 		(uuid "66554ca3-0005-4188-b599-f5e0c5fa7f95")
-	)
-	(wire
-		(pts
-			(xy 209.55 74.93) (xy 248.92 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6991ff8f-ac5f-41a5-a330-2815d660552e")
 	)
 	(wire
 		(pts
@@ -7474,6 +7475,16 @@
 			(type default)
 		)
 		(uuid "7d12a891-9f97-4120-baa7-f19ea5385024")
+	)
+	(wire
+		(pts
+			(xy 209.55 72.39) (xy 224.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5b5e5f-0562-4d44-a467-21d8a0874b5e")
 	)
 	(wire
 		(pts
@@ -7657,16 +7668,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 58.42) (xy 264.16 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b64292a-bbef-4e1d-bc88-d0b55e18b441")
-	)
-	(wire
-		(pts
 			(xy 245.11 21.59) (xy 255.27 21.59)
 		)
 		(stroke
@@ -7787,6 +7788,26 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 74.93) (xy 236.22 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13b7679-0f74-4241-8470-65cd332e3cc7")
+	)
+	(wire
+		(pts
+			(xy 209.55 74.93) (xy 222.25 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b190a4df-b2a3-41c5-b81f-68a7a6deed36")
+	)
+	(wire
+		(pts
 			(xy 214.63 153.67) (xy 224.79 153.67)
 		)
 		(stroke
@@ -7857,6 +7878,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 72.39) (xy 236.22 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71c757f-69a0-4e52-b72c-4ab4d8697696")
+	)
+	(wire
+		(pts
 			(xy 63.5 31.75) (xy 55.88 31.75)
 		)
 		(stroke
@@ -7864,16 +7895,6 @@
 			(type default)
 		)
 		(uuid "b773b62b-39ff-405f-bd7b-2cf93d646ab9")
-	)
-	(wire
-		(pts
-			(xy 234.95 49.53) (xy 265.43 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7c8c0db-2ea3-41c1-aed0-3ac5db240db7")
 	)
 	(wire
 		(pts
@@ -7917,13 +7938,13 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 74.93) (xy 248.92 58.42)
+			(xy 222.25 54.61) (xy 236.22 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be02c797-87af-4a08-8d16-e7c84c6c2dfa")
+		(uuid "bda41c19-2a96-4e3e-93f5-3c4d270743b8")
 	)
 	(wire
 		(pts
@@ -7934,6 +7955,9 @@
 			(type default)
 		)
 		(uuid "bee55274-6671-4d9d-a778-b0fece61a59d")
+	)
+		)
+		(uuid "c098e422-6fdb-4e91-a497-06d401afe7e5")
 	)
 	(wire
 		(pts
@@ -7997,6 +8021,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 49.53) (xy 236.22 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7acdc9b-4112-4490-8e6b-5e3146556627")
+	)
+	(wire
+		(pts
 			(xy 237.49 129.54) (xy 251.46 129.54)
 		)
 		(stroke
@@ -8037,23 +8071,13 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 72.39) (xy 176.53 72.39)
+			(xy 250.19 80.01) (xy 251.46 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1a34c34-16c8-46b2-8e89-1494f757b630")
-	)
-	(wire
-		(pts
-			(xy 265.43 60.96) (xy 264.16 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d35a0cad-51f9-44bb-b2ba-b7762e5d741e")
+		(uuid "d0c0449c-e6fb-4292-9c1d-ccc1c9bc6b49")
 	)
 	(wire
 		(pts
@@ -8254,16 +8278,6 @@
 			(type default)
 		)
 		(uuid "f386f32a-3d5d-47f2-8454-226543f23c7c")
-	)
-	(wire
-		(pts
-			(xy 234.95 72.39) (xy 234.95 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f50bca8e-c398-407e-b639-9511d970e9b3")
 	)
 	(wire
 		(pts
@@ -8487,17 +8501,6 @@
 		)
 		(uuid "64cf15fb-b5c9-4e83-b301-021da56e53c9")
 	)
-	(text "BOOT1"
-		(exclude_from_sim no)
-		(at 166.37 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "657a5f0d-f9a0-47a9-a9dd-72c016345917")
-	)
 	(text "LEDs are all on PWM pins"
 		(exclude_from_sim no)
 		(at 133.35 114.3 0)
@@ -8593,6 +8596,28 @@
 			(justify right bottom)
 		)
 		(uuid "12d0cc0a-6939-4e61-aa08-926d077a0a50")
+	)
+	(label "RST_{MCU}"
+		(at 228.6 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1390b71e-759f-4553-93e1-a1ea320687ad")
+	)
+	(label "Header_{RX}"
+		(at 226.06 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a809fda-7408-4e68-b9d7-c0cd7a9c211d")
 	)
 	(label "USB_D+"
 		(at 78.74 128.27 180)
@@ -8737,6 +8762,17 @@
 		)
 		(uuid "777c3c31-12dd-4f83-a97f-4e5abb43e86b")
 	)
+	(label "Header_{TX}"
+		(at 166.37 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8bd2ac4e-ee0a-4630-a4c5-5c2028bfa7e4")
+	)
 	(label "SDA"
 		(at 69.85 29.21 0)
 		(fields_autoplaced yes)
@@ -8770,17 +8806,6 @@
 		)
 		(uuid "a1cb0f9a-5b27-4e0e-bc79-c6e0ff4c58f7")
 	)
-	(label "BOOT0"
-		(at 139.7 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a807e323-8222-4c2b-8046-3e2d7a95f0f7")
-	)
 	(label "FB"
 		(at 99.06 186.69 0)
 		(fields_autoplaced yes)
@@ -8802,6 +8827,17 @@
 			(justify left bottom)
 		)
 		(uuid "afa6085f-07f3-4228-ba73-459e89810fba")
+	)
+	(label "Header_{RX}"
+		(at 166.37 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0f0edc7-8ad0-42b0-892f-ad0a904398b9")
 	)
 	(label "STATUS_{1}"
 		(at 166.37 82.55 0)
@@ -8935,6 +8971,17 @@
 		)
 		(uuid "e2bad4ba-dd63-45f3-bd15-75a8ffea1295")
 	)
+	(label "Header_{TX}"
+		(at 226.06 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0ad57ad-a68d-4fb3-898e-aa5fe2958066")
+	)
 	(symbol
 		(lib_id "power:+5V")
 		(at 99.06 22.86 0)
@@ -8977,7 +9024,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 99.06 22.86 0)
 			(effects
 				(font
@@ -8990,7 +9037,7 @@
 			(uuid "fd2c46a1-7aae-42a9-93da-4ab8c0ebf781")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR012")
 					(unit 1)
@@ -9040,7 +9087,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 78.74 22.86 0)
 			(effects
 				(font
@@ -9053,7 +9100,7 @@
 			(uuid "fdfe2621-3322-4e6b-8d8a-a69772548e87")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR09")
 					(unit 1)
@@ -9103,7 +9150,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 99.06 78.74 0)
 			(effects
 				(font
@@ -9116,7 +9163,7 @@
 			(uuid "c4a8cca2-2b39-45ae-a676-abbcbbb9291c")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR013")
 					(unit 1)
@@ -9166,7 +9213,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 81.28 78.74 0)
 			(effects
 				(font
@@ -9179,7 +9226,7 @@
 			(uuid "6d128834-dfd6-4792-956f-f932023802bf")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR010")
 					(unit 1)
@@ -9230,7 +9277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 88.9 49.53 0)
 			(effects
 				(font
@@ -9360,7 +9407,7 @@
 			(uuid "782d2c1f-9599-409d-a3cc-c1b6fda247d8")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J3")
 					(unit 1)
@@ -9410,7 +9457,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 237.49 127 0)
 			(effects
 				(font
@@ -9429,7 +9476,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR030")
 					(unit 1)
@@ -9483,7 +9530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 132.08 186.69 0)
 			(effects
 				(font
@@ -9505,7 +9552,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C7")
 					(unit 1)
@@ -9555,7 +9602,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 162.56 27.94 0)
 			(effects
 				(font
@@ -9574,7 +9621,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR022")
 					(unit 1)
@@ -9624,7 +9671,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 251.46 137.16 0)
 			(effects
 				(font
@@ -9637,7 +9684,7 @@
 			(uuid "91a3aa7a-0735-4261-8fe1-738c395a36cf")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR034")
 					(unit 1)
@@ -9688,7 +9735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 134.62 101.6 0)
 			(effects
 				(font
@@ -9710,7 +9757,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R8")
 					(unit 1)
@@ -9765,7 +9812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
 			(at 237.49 148.59 0)
 			(effects
 				(font
@@ -9805,7 +9852,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U4")
 					(unit 1)
@@ -9858,7 +9905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263"
 			(at 73.66 104.14 0)
 			(effects
 				(font
@@ -9883,7 +9930,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U1")
 					(unit 1)
@@ -9935,7 +9982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 49.53 116.84 0)
 			(effects
 				(font
@@ -9957,7 +10004,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R2")
 					(unit 1)
@@ -10014,7 +10061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 146.05 101.6 0)
 			(effects
 				(font
@@ -10036,7 +10083,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R11")
 					(unit 1)
@@ -10090,7 +10137,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 109.22 182.88 0)
 			(effects
 				(font
@@ -10112,7 +10159,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R6")
 					(unit 1)
@@ -10165,7 +10212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 63.5 44.45 0)
 			(effects
 				(font
@@ -10187,7 +10234,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW1")
 					(unit 1)
@@ -10237,7 +10284,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 219.71 21.59 0)
 			(effects
 				(font
@@ -10256,78 +10303,9 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 166.37 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e4eb97a-b0da-4b31-9789-f4b7bff706fa")
-		(property "Reference" "#PWR034"
-			(at 166.37 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 166.37 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 166.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "66e9f090-a6dd-40d5-9651-fb7f43e1c994")
-		)
-		(instances
-			(project "titan_2022"
-				(path "/a202737f-3bef-4789-86fe-0d52089f6e3f"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-			(project "downlink_board"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10376,7 +10354,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 80.01 0)
 			(effects
 				(font
@@ -10395,7 +10373,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR032")
 					(unit 1)
@@ -10448,7 +10426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 146.05 105.41 0)
 			(effects
 				(font
@@ -10467,7 +10445,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR018")
 					(unit 1)
@@ -10521,7 +10499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 69.85 186.69 0)
 			(effects
 				(font
@@ -10543,9 +10521,75 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "457d40d8-a84f-4a4d-8fd1-39bc175060dd")
+		(property "Reference" "#PWR015"
+			(at 250.19 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "486701e0-9d85-45f6-b8f9-ee4b9a7adc45")
+		)
+		(instances
+			(project "downlink_board_rev2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10597,7 +10641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 251.46 133.35 0)
 			(effects
 				(font
@@ -10619,7 +10663,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C14")
 					(unit 1)
@@ -10673,7 +10717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 204.47 144.78 0)
 			(effects
 				(font
@@ -10695,7 +10739,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R14")
 					(unit 1)
@@ -10749,7 +10793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 142.24 190.5 0)
 			(effects
 				(font
@@ -10771,7 +10815,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R10")
 					(unit 1)
@@ -10824,7 +10868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 111.76 179.07 0)
 			(effects
 				(font
@@ -10837,7 +10881,7 @@
 			(uuid "163a646a-5347-429e-8d4f-e7dd9e925789")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#FLG05")
 					(unit 1)
@@ -10887,7 +10931,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 193.04 113.03 0)
 			(effects
 				(font
@@ -10900,7 +10944,7 @@
 			(uuid "d3a0f348-ba6f-48fa-bd64-23f3fd8fb25e")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR025")
 					(unit 1)
@@ -10954,7 +10998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 120.65 186.69 0)
 			(effects
 				(font
@@ -10976,7 +11020,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C6")
 					(unit 1)
@@ -11030,7 +11074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 109.22 190.5 0)
 			(effects
 				(font
@@ -11052,7 +11096,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R7")
 					(unit 1)
@@ -11106,7 +11150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 78.74 22.86 0)
 			(effects
 				(font
@@ -11119,7 +11163,7 @@
 			(uuid "66aaa547-f7af-4460-9096-51df0d17754a")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#FLG04")
 					(unit 1)
@@ -11171,7 +11215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 64KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
 			(at 191.77 74.93 0)
 			(effects
 				(font
@@ -11331,7 +11375,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U3")
 					(unit 1)
@@ -11341,7 +11385,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_ST_STDC14")
-		(at 251.46 66.04 0)
+		(at 248.92 62.23 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11350,25 +11395,27 @@
 		(fields_autoplaced yes)
 		(uuid "6388a958-f239-435a-9e3e-b802c0432672")
 		(property "Reference" "J6"
-			(at 240.03 64.7699 0)
+			(at 260.35 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Value" "Conn_ST_STDC14"
-			(at 240.03 67.3099 0)
+			(at 260.35 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD"
-			(at 251.46 66.04 0)
+			(at 248.92 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11377,7 +11424,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf"
-			(at 242.57 97.79 90)
+			(at 257.81 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11386,7 +11433,7 @@
 			)
 		)
 		(property "Description" "ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
-			(at 251.46 66.04 0)
+			(at 248.92 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11437,7 +11484,7 @@
 			(uuid "29a625b7-d953-4e0d-b8d8-fa0351fb16fd")
 		)
 		(instances
-			(project ""
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J6")
 					(unit 1)
@@ -11491,7 +11538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 40.64 194.31 0)
 			(effects
 				(font
@@ -11504,7 +11551,7 @@
 			(uuid "27597f6b-a350-408f-a483-6e716afe41a8")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#FLG02")
 					(unit 1)
@@ -11557,7 +11604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 146.05 93.98 0)
 			(effects
 				(font
@@ -11579,7 +11626,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D3")
 					(unit 1)
@@ -11633,7 +11680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 142.24 182.88 0)
 			(effects
 				(font
@@ -11655,7 +11702,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D2")
 					(unit 1)
@@ -11709,7 +11756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 50.8 31.75 0)
 			(effects
 				(font
@@ -11731,7 +11778,7 @@
 			(uuid "fb568d62-a42a-493a-bb97-ddc46af5c203")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J2")
 					(unit 1)
@@ -11784,7 +11831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 111.76 0)
 			(effects
 				(font
@@ -11809,7 +11856,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR08")
 					(unit 1)
@@ -11818,7 +11865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 27.94 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11828,7 +11875,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fc2fd85-320e-43e7-b037-46639b890561")
 		(property "Reference" "J2"
-			(at 27.94 102.87 0)
+			(at 27.94 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11836,11 +11883,12 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0"
-			(at 27.94 105.41 0)
+			(at 27.94 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
@@ -11861,7 +11909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 27.94 124.46 0)
 			(effects
 				(font
@@ -11928,7 +11976,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "J1")
 					(unit 1)
@@ -11982,7 +12030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 162.56 31.75 0)
 			(effects
 				(font
@@ -12004,7 +12052,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R13")
 					(unit 1)
@@ -12056,7 +12104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 92.71 173.99 0)
 			(effects
 				(font
@@ -12078,7 +12126,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C5")
 					(unit 1)
@@ -12132,7 +12180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 204.47 25.4 0)
 			(effects
 				(font
@@ -12154,7 +12202,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C8")
 					(unit 1)
@@ -12234,72 +12282,9 @@
 			(uuid "c3dae1cc-6ebf-41a3-b7d8-86561d7a2a53")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 251.46 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "864da96f-730a-4d94-a33a-0e9bcdf65c7c")
-		(property "Reference" "#PWR029"
-			(at 251.46 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 251.5743 88.1444 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 251.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 251.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 251.46 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c031ab3f-b651-41e3-b616-ccfb5a45d5e0")
-		)
-		(instances
-			(project "downlink_board"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -12351,7 +12336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 224.79 25.4 0)
 			(effects
 				(font
@@ -12373,7 +12358,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C10")
 					(unit 1)
@@ -12425,7 +12410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 132.08 76.2 0)
 			(effects
 				(font
@@ -12447,7 +12432,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R16")
 					(unit 1)
@@ -12499,7 +12484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 102.87 179.07 0)
 			(effects
 				(font
@@ -12521,7 +12506,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "L1")
 					(unit 1)
@@ -12571,7 +12556,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 237.49 163.83 0)
 			(effects
 				(font
@@ -12584,7 +12569,7 @@
 			(uuid "e4da38a7-735b-44ca-82fc-2d3fe17e541d")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR031")
 					(unit 1)
@@ -12636,7 +12621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 127 68.58 0)
 			(effects
 				(font
@@ -12658,7 +12643,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R15")
 					(unit 1)
@@ -12710,7 +12695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 64.77 123.19 0)
 			(effects
 				(font
@@ -12732,7 +12717,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R3")
 					(unit 1)
@@ -12792,7 +12777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 245.11 25.4 0)
 			(effects
 				(font
@@ -12814,7 +12799,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C12")
 					(unit 1)
@@ -12868,7 +12853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 234.95 25.4 0)
 			(effects
 				(font
@@ -12890,7 +12875,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C11")
 					(unit 1)
@@ -12943,7 +12928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 157.48 93.98 0)
 			(effects
 				(font
@@ -12965,7 +12950,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D4")
 					(unit 1)
@@ -13017,7 +13002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 67.31 173.99 0)
 			(effects
 				(font
@@ -13039,7 +13024,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R5")
 					(unit 1)
@@ -13090,7 +13075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 156.21 39.37 0)
 			(effects
 				(font
@@ -13112,7 +13097,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW3")
 					(unit 1)
@@ -13165,7 +13150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Multiple-cell battery"
 			(at 40.64 186.69 0)
 			(effects
 				(font
@@ -13181,9 +13166,75 @@
 			(uuid "a814572c-fbf8-412c-a0bd-4adc90a3b378")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 248.92 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fc788a9-b4de-4453-b4a2-944f86376a6f")
+		(property "Reference" "#PWR029"
+			(at 248.92 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 248.92 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 248.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "487323b5-c8e4-42a6-8cfe-ed31dec9ac8d")
+		)
+		(instances
+			(project "downlink_board_rev2"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -13232,7 +13283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 157.48 101.6 0)
 			(effects
 				(font
@@ -13254,7 +13305,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R12")
 					(unit 1)
@@ -13306,7 +13357,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Jumper, 2-pole, open"
 			(at 96.52 104.14 0)
 			(effects
 				(font
@@ -13322,7 +13373,7 @@
 			(uuid "bd58bc68-821a-4e08-b664-c6ddd43e4a96")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "JP1")
 					(unit 1)
@@ -13374,7 +13425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 64.77 128.27 0)
 			(effects
 				(font
@@ -13396,7 +13447,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R4")
 					(unit 1)
@@ -13456,7 +13507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 127 76.2 0)
 			(effects
 				(font
@@ -13478,7 +13529,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C13")
 					(unit 1)
@@ -13531,7 +13582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
 			(at 40.64 179.07 0)
 			(effects
 				(font
@@ -13544,7 +13595,7 @@
 			(uuid "1f45937a-83a8-47bd-b1ac-edaa8f66646c")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR02")
 					(unit 1)
@@ -13598,7 +13649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 214.63 25.4 0)
 			(effects
 				(font
@@ -13620,7 +13671,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C9")
 					(unit 1)
@@ -13674,7 +13725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 55.88 186.69 0)
 			(effects
 				(font
@@ -13696,7 +13747,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C1")
 					(unit 1)
@@ -13747,7 +13798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Three pin ceramic resonator"
 			(at 165.1 52.07 0)
 			(effects
 				(font
@@ -13772,7 +13823,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "Y1")
 					(unit 1)
@@ -13822,7 +13873,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 165.1 57.15 0)
 			(effects
 				(font
@@ -13841,7 +13892,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR023")
 					(unit 1)
@@ -13891,7 +13942,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 55.88 34.29 0)
 			(effects
 				(font
@@ -13904,7 +13955,7 @@
 			(uuid "9ba18d49-33c7-4598-a77a-7910ec716977")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR04")
 					(unit 1)
@@ -13957,7 +14008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.82 196.85 0)
 			(effects
 				(font
@@ -13976,7 +14027,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR011")
 					(unit 1)
@@ -14030,7 +14081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 40.64 179.07 0)
 			(effects
 				(font
@@ -14043,7 +14094,7 @@
 			(uuid "f104a71b-96ed-4673-9dd8-98b3a086b675")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#FLG01")
 					(unit 1)
@@ -14094,7 +14145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, US symbol"
 			(at 49.53 114.3 0)
 			(effects
 				(font
@@ -14116,7 +14167,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R1")
 					(unit 1)
@@ -14174,7 +14225,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 147.32 179.07 0)
 			(effects
 				(font
@@ -14187,7 +14238,7 @@
 			(uuid "95eb81f3-dc55-4cfd-bf75-034c33388fec")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR019")
 					(unit 1)
@@ -14239,7 +14290,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 151.13 39.37 0)
 			(effects
 				(font
@@ -14258,7 +14309,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR020")
 					(unit 1)
@@ -14311,7 +14362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 43.18 104.14 0)
 			(effects
 				(font
@@ -14324,7 +14375,7 @@
 			(uuid "480bd301-3b52-4dd5-be82-56d1f6a091af")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#FLG03")
 					(unit 1)
@@ -14378,7 +14429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 63.5 107.95 0)
 			(effects
 				(font
@@ -14406,7 +14457,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C2")
 					(unit 1)
@@ -14458,7 +14509,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 101.6 104.14 0)
 			(effects
 				(font
@@ -14471,7 +14522,7 @@
 			(uuid "0eafc4db-b241-45d1-b049-baa9492ec245")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR014")
 					(unit 1)
@@ -14521,7 +14572,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 219.71 29.21 0)
 			(effects
 				(font
@@ -14540,7 +14591,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR028")
 					(unit 1)
@@ -14593,7 +14644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 115.57 0)
 			(effects
 				(font
@@ -14612,7 +14663,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR05")
 					(unit 1)
@@ -14665,7 +14716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
 			(at 127 64.77 0)
 			(effects
 				(font
@@ -14684,7 +14735,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR033")
 					(unit 1)
@@ -14734,7 +14785,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 49.53 0)
 			(effects
 				(font
@@ -14753,7 +14804,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR06")
 					(unit 1)
@@ -14807,7 +14858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 255.27 25.4 0)
 			(effects
 				(font
@@ -14829,7 +14880,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C15")
 					(unit 1)
@@ -14882,7 +14933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 157.48 105.41 0)
 			(effects
 				(font
@@ -14901,7 +14952,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR021")
 					(unit 1)
@@ -14951,7 +15002,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 204.47 140.97 0)
 			(effects
 				(font
@@ -14970,7 +15021,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR026")
 					(unit 1)
@@ -15023,7 +15074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 27.94 147.32 0)
 			(effects
 				(font
@@ -15042,7 +15093,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR01")
 					(unit 1)
@@ -15095,7 +15146,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 134.62 93.98 0)
 			(effects
 				(font
@@ -15117,7 +15168,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "D1")
 					(unit 1)
@@ -15170,7 +15221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 63.5 77.47 0)
 			(effects
 				(font
@@ -15192,7 +15243,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW2")
 					(unit 1)
@@ -15245,7 +15296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 134.62 105.41 0)
 			(effects
 				(font
@@ -15264,7 +15315,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR017")
 					(unit 1)
@@ -15314,7 +15365,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 63.5 82.55 0)
 			(effects
 				(font
@@ -15333,7 +15384,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR07")
 					(unit 1)
@@ -15383,7 +15434,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 55.88 26.67 0)
 			(effects
 				(font
@@ -15396,7 +15447,7 @@
 			(uuid "f8214877-e458-4592-8427-fdd1082c03f0")
 		)
 		(instances
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR03")
 					(unit 1)
@@ -15446,7 +15497,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 138.43 44.45 0)
 			(effects
 				(font
@@ -15465,7 +15516,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR016")
 					(unit 1)
@@ -15519,7 +15570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 83.82 107.95 0)
 			(effects
 				(font
@@ -15547,7 +15598,7 @@
 					(unit 1)
 				)
 			)
-			(project "downlink_board"
+			(project "downlink_board_rev2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "C4")
 					(unit 1)
