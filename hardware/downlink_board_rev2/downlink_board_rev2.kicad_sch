@@ -7956,6 +7956,13 @@
 		)
 		(uuid "bee55274-6671-4d9d-a778-b0fece61a59d")
 	)
+	(wire
+		(pts
+			(xy 166.37 95.25) (xy 176.53 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
 		)
 		(uuid "c098e422-6fdb-4e91-a497-06d401afe7e5")
 	)
